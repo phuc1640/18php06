@@ -1,0 +1,52 @@
+body{
+	color: white;
+}
+section{
+	width: 60%;
+	margin: 1px auto;
+	height: 500px;
+	
+}
+.header{
+	background-color: #6666ff;
+	padding: 20px;
+}
+.main-content{
+	background-color: #33cc33;
+	text-align: center;
+	vertical-align: middle;
+	height: 70%;
+	width: 69%;
+	float: left;
+	margin: 2px;
+
+}
+.sidebar{
+	background-color: #cc0099;
+	text-align: center;
+	vertical-align: middle;
+	height: 70%;
+	width: 30%;
+	float: left;
+	margin: 2px;
+}
+.twin{
+	background-color: #ff9900;
+	text-align: center;
+	vertical-align: middle;
+	height: 28%;
+	width: 49.5%;
+	float: left;
+	margin: 2px;
+}
+.footer{
+	background-color: #1a1aff;
+	padding: 20px;
+}
+p {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
