@@ -389,14 +389,15 @@ h3{
 		height: 77px;
 		margin-top: 3px;
 		margin-bottom: 3px;
-		margin-right: 0.3%;
-		margin-left: 0.3%;
-		width: 94%;
+		width: 95%;
 		float: none;
+		text-align: center;
 		position: absolute;
-	    top: 237px;
-	    right: 11px;
-	    text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		top: 236px;
 	}
 	.body{
 		background-color: #4db8ff;
