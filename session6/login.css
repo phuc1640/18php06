@@ -1,0 +1,66 @@
+.login{
+	width: 50%;
+	float: left;
+}
+.register{
+	width: 50%;
+	float: left;
+}
+.name{
+	margin-bottom: 110px;
+	width: 92%
+}
+.firstname{
+	width: 50%;
+	float: left;
+}
+.lastname{
+	width: 50%;
+	float: left;
+}
+.name-button{
+	width: 97%;
+	float: none;
+}
+.button{
+	width: 90%;
+}
+.box1{
+	width: 85%;
+	padding: 3%;
+	border: 1px solid gray;
+}
+.box2{
+	width: 70%;
+	padding: 3%;
+	border: 1px solid gray;
+}
+@media screen and (max-width: 425px){
+	.login{
+		width: 100%;
+		float: none;
+	}
+	.register{
+		width: 100%;
+		float: none;
+	}
+	.firstname{
+		width: 100%;
+		float: none;
+	}
+	.lastname{
+		width: 100%;
+		float: none;
+	}
+	.name{
+		margin-bottom: 10px;
+		width: 93%%
+	}
+	.box1{
+		width: 93%;
+	}
+	.box2{
+		width: 93%;
+
+	}
+}
