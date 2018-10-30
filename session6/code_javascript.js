@@ -1,7 +1,8 @@
-var n = 9;
+var n = 10;
 document.write(n + ' la ');
 if(n%2==0){
 	document.write('so chan ');
+	document.write('<br>');
 }else{
 	document.write('so le ');
 	
