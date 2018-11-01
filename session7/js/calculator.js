@@ -4,6 +4,7 @@ var isEqualButtonPressed = false;
 var inputFieldNum = 0;
 var mathBeforeNum = 0;
 var result;
+
 function num0Button() {
 	addMoreNumbers(0);
 }
@@ -93,8 +94,6 @@ function percentageButton() {
 	inputFieldNum = inputFieldNum/100;
 	document.getElementById('input_field').innerHTML = inputFieldNum;
 }
-
-
 
 function ACButton() {
 	isMathButtonPressed = false;
