@@ -5,44 +5,16 @@ var inputFieldNum = 0;
 var mathBeforeNum = 0;
 var result;
 
-function num0Button() {
-	addMoreNumbers(0);
+function numButton(num) {
+	addMoreNumbers(num);
 }
 
-function num1Button() {
-	addMoreNumbers(1);
-}
-
-function num2Button() {
-	addMoreNumbers(2);
-}
-
-function num3Button() {
-	addMoreNumbers(3);
-}
-
-function num4Button() {
-	addMoreNumbers(4);
-}
-
-function num5Button() {
-	addMoreNumbers(5);
-}
-
-function num6Button() {
-	addMoreNumbers(6);
-}
-
-function num7Button() {
-	addMoreNumbers(7);
-}
-
-function num8Button() {
-	addMoreNumbers(8);
-}
-
-function num9Button() {
-	addMoreNumbers(9);
+function backButton() {
+	var inputFieldStr = document.getElementById('input_field').innerHTML;
+	if (inputFieldStr != "") {
+		inputFieldStr = inputFieldStr.slice(0, inputFieldStr.length - 1);
+		document.getElementById('input_field').innerHTML = inputFieldStr;
+	}
 }
 
 function periodButton() {
@@ -72,20 +44,8 @@ function switchPoleButton() {
 	document.getElementById('input_field').innerHTML = inputFieldStr;
 }
 
-function plusButton() {
-	displayScreenAfterMathButtonPressed("+");	
-}
-
-function minusButton() {
-	displayScreenAfterMathButtonPressed("-");
-}
-
-function timesButton() {
-	displayScreenAfterMathButtonPressed("*");	
-}
-
-function divideButton() {
-	displayScreenAfterMathButtonPressed("/");
+function mathButton(operator) {
+	displayScreenAfterMathButtonPressed(operator);	
 }
 
 function percentageButton() {
