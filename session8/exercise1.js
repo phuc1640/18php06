@@ -1,5 +1,5 @@
-var fullName = "Ta Sinh Phuc";
-
+var fullName = "Ta Sinh Phuc sinh";
+var isCaseSesitive = document.getElementById('isSensitive').innerHTML;
 document.getElementById('fullName').innerHTML = fullName;
 
 var isExist = fullName.includes("n");
@@ -36,18 +36,22 @@ var highlight = fullName.replace(/a/g,"<mark>a</mark>");
 highlight = highlight.replace(/n/g,"<mark>n</mark>");
 document.getElementById('ex8').innerHTML = "Ten doi thanh : " + highlight;
 
-var highlight2 = highlightChar('si',fullName);
+var highlight2 = highlightChar('Si',fullName);
 
 document.getElementById('ex9').innerHTML = "Ten doi thanh : " + highlight2;
 
 
 function highlightChar(letters, str){
 	var strFirstSlice ="";
-	var strLastSlice ="";
-	var strMiddleSlice ="";
 	var strResult ="";
 	var skipCount = 0;
-	if (str.toLowerCase().includes(letters.toLowerCase())) {
+	var strCheck = str;
+
+	if (isCaseSesitive == "1") {
+		strCheck = str.toLowerCase();
+		letters = letters.toLowerCase();
+	}
+	if (str.includes(letters)) {
 		charArray = letters.split('');
 		for (var i = 0; i < str.length; i++) {
 			var isContain = false;
@@ -56,6 +60,11 @@ function highlightChar(letters, str){
 				break;
 			}
 			strFirstSlice = str.slice(i,i+charArray.length);
+			var strFirstSlicecheck = strFirstSlice;
+			if (isCaseSesitive == "1") {
+				strFirstSlicecheck = strFirstSlicecheck.toLowerCase();
+				
+			}
 			// console.log(str.slice(11, 11+charArray.length-1));
 			// console.log(strFirstSlice);
 			for (var j = 0; j < charArray.length; j++) {
@@ -66,7 +75,7 @@ function highlightChar(letters, str){
 				}
 				// console.log(strFirstSlice.charAt(j).toLowerCase());
 				// console.log(charArray[j].toLowerCase());
-				if (strFirstSlice.charAt(j).toLowerCase() == charArray[j].toLowerCase()) {
+				if (strFirstSlicecheck.charAt(j) == charArray[j]) {
 
 					isContain = true;
 					
