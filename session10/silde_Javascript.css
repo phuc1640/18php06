@@ -1,0 +1,30 @@
+#slideContainer{
+	width: 90%;
+	margin: 0 auto;
+}
+.mySlides{
+	width: 100%;
+}
+#buttonslideContainer{
+	width: 96%;
+	margin: 0 auto;
+	font-size: 150%;
+	color: white;
+	position: relative;
+	bottom: 50px;
+}
+#minusButton{
+	width: 20%;
+	float: left;
+	text-align: left;
+}
+#indexContainer{
+	width: 60%;
+	float: left;
+	text-align: center;
+}
+#plusButton{
+	width: 20%;
+	float: left;
+	text-align: right;
+}

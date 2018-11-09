@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<form name="RegisterForm" action="#" method="post">
+		<p><strong>Họ và tên</strong></p>
+		<p id="checkUsername" style="height: 5px; color: red; font-style: italic;"></p>
+		<p><input type="text" name="username" id="username" placeholder="Nhập tên"></p>
+		<p><strong>Mật khẩu</strong></p>
+		<p id="checkPassword" style="height: 5px; color: red; font-style: italic;"></p>
+		<p><input type="password" name="password" id="password" placeholder="Nhập mật khẩu"></p>
+		<p id="checkGender" style="height: 5px; color: red; font-style: italic;"></p>
+		<p id="gender">
+			<input type="radio" name="gender" value="male">Nam
+			<input type="radio" name="gender" value="female">Nữ<br>
+		</p>
+		<p id="checkFinal" style="height: 5px; color: green; font-style: italic;"></p>
+		<p>
+			<input type="button" name="button" value="Đăng nhập" onclick="check()">
+		</p>
+
+	</form>
+	<script type="text/javascript" src="form.js"></script>
+</body>
+</html>
